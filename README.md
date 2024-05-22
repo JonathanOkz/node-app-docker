@@ -6,10 +6,11 @@ This project uses Docker Compose to clone a GitHub repository, install dependenc
 
    ```env
    GIT_REPO_URL=https://github.com/your/repo.git
+   APP_TARGET=dist/index.js
    APP_PORT=3000
 
 2. **Create a `.env.app` file at the root of the project:**
-This .env.app file will be copied to the root of the cloned Git repository, allowing your Node.js application to run with your environment variables
+This `.env.app` file will be copied to the root of the cloned Git repository, allowing your Node.js application to run with your environment variables
 
 ## Usage
 

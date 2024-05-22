@@ -11,5 +11,5 @@ COPY .env.app .env
 RUN npm install
 RUN npm run build
 
-CMD ["npm", "start"]
-
+ARG APP_TARGET
+CMD ["node", "--env-file=.env", "${APP_TARGET}"]
