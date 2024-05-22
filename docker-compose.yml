@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        - GIT_REPO_URL=${GIT_REPO_URL}
+    container_name: node_app
+    ports:
+      - ${APP_PORT}:${APP_PORT}
+
