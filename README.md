@@ -21,4 +21,4 @@ This .env.app file will be copied to the root of the cloned Git repository, allo
 
 2. **Access the application:**
 
-   Go to `http://localhost:3000` (or the port specified in your `Docdocker-compose.yml` file).
+   Go to `http://localhost:3000` (or the port specified in your `.env` file).
