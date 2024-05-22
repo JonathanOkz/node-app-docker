@@ -6,7 +6,7 @@ RUN git clone $GIT_REPO_URL /usr/src/app
 
 WORKDIR /usr/src/app
 
-COPY .env .env
+COPY .env.app .env
 
 RUN npm install
 RUN npm run build
