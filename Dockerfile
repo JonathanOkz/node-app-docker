@@ -12,4 +12,5 @@ RUN npm install
 RUN npm run build
 
 ARG APP_TARGET
-CMD ["node", "--env-file=.env", "${APP_TARGET}"]
+ENV APP_TARGET ${APP_TARGET}
+CMD node --env-file=.env ${APP_TARGET}
