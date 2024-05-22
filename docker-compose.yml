@@ -6,7 +6,7 @@ services:
       context: .
       args:
         - GIT_REPO_URL=${GIT_REPO_URL}
-	- APP_TARGET=${APP_TARGET}
+        - APP_TARGET=${APP_TARGET}
     container_name: node_app
     ports:
       - ${APP_PORT}:${APP_PORT}
